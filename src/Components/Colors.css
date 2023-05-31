@@ -1,0 +1,35 @@
+/* BackGround Color */
+body {
+  background-image: linear-gradient(
+    to left bottom,
+    #8785a2,
+    #a090ad,
+    #b89bb6,
+    #d0a7bd,
+    #e6b4c2,
+    #efbcc6,
+    #f7c5ca,
+    #ffcece,
+    #ffd3d3,
+    #ffd8d8,
+    #ffdddd,
+    #ffe2e2
+  );
+  background-image: linear-gradient(
+    to left bottom,
+    #b2f7ef,
+    #b2f2ff,
+    #c3ebff,
+    #dae2ff,
+    #eddbf7,
+    #edddf5,
+    #ecdef4,
+    #ece0f2,
+    #e5e8f8,
+    #e2eef8,
+    #e7f3f7,
+    #eff7f6
+  );
+  color: #ffc7c7 #ffe2e2 #f6f6f6 #8785a2;
+  color: #414a4c;
+}

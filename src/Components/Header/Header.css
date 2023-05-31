@@ -1,0 +1,108 @@
+.PageContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.navContainer {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+}
+.logo {
+  margin: auto;
+  padding: 0 30px;
+}
+.logoImg {
+  width: 200px;
+  margin-right: 10px;
+  margin-left: -1px;
+  cursor: pointer;
+}
+.search {
+  margin-right: 28rem;
+  border-radius: 6px;
+  /* background-clip: border-box; */
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+
+  border: 1px solid rgba(255, 255, 255, 0.29);
+
+  max-width: fit-content;
+}
+.searchIcons {
+  margin: -2px 0px;
+  padding: 6.8px 5px;
+  /* margin-bottom: 7px; */
+  position: fixed;
+  left: 28.7%;
+  color: #579490;
+  font-weight: 900;
+  border-radius: 6px;
+  /* background-clip: border-box; */
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 5px 25px; */
+  margin: auto;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  color: #2cadc7;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.list-item {
+  padding: 0 10px;
+}
+.icons {
+  /* position: relative; */
+  margin-bottom: -3px;
+}
+
+ul .list-item:hover {
+  color: #f2b5d4; /* Change the text color on hover */
+  text-decoration: underline;
+}
+ul::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f2b5d4; /* Set the color of the underline */
+  transition: width 0.3s; /* Set the transition duration */
+}
+
+ul:hover::after {
+  width: 10%; /* Expand the width of the underline on hover */
+}
+
+.serach {
+}
