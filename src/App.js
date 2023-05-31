@@ -7,16 +7,18 @@ import { Header } from "./Components/Header/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UserContext from "./Context/ContextApi";
 import ContextConsumer from "../src/Context/ContextConsumer.jsx";
-
 import user from "./Data/contextData";
-function App() {
+import PropsExample from "./Props/props";
+
+function App(props) {
   return (
     <div className="App">
       <UserContext.Provider value={user}>
         <Router>
           <Routes>
             {/* <Route exact path="/" element={<Header />} /> */}
-            <Route exact path="/" element={<ContextConsumer />} />
+            {/* <Route exact path="/" element={<ContextConsumer />} /> */}
+            <Route exact path="/" element={<PropsExample data={{ user }} />} />
           </Routes>
         </Router>
       </UserContext.Provider>
