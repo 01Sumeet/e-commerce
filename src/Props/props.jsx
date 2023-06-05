@@ -11,5 +11,4 @@ const PropsExample = (props) => {
 
 export default PropsExample;
 
-
 // This is how we pass data from one component to another using PropsExample

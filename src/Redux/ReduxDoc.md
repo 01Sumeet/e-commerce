@@ -1,4 +1,5 @@
 #This is the default file structure for the redux state mangement process.
+In a single Application it cant't be use twic.
 
 src/
 ├── actions/

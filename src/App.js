@@ -7,8 +7,9 @@ import { Header } from "./Components/Header/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UserContext from "./Context/ContextApi";
 import ContextConsumer from "../src/Context/ContextConsumer.jsx";
-import user from "./Data/contextData";
+import {user} from '../src/Data/contextData.ts'
 import PropsExample from "./Props/props";
+import Welcome from "./Pages/WelcomPage/SignUp";
 
 function App(props) {
   return (
@@ -16,9 +17,10 @@ function App(props) {
       <UserContext.Provider value={user}>
         <Router>
           <Routes>
+            <Route path="/" element={<Welcome/>}/>
             {/* <Route exact path="/" element={<Header />} /> */}
             {/* <Route exact path="/" element={<ContextConsumer />} /> */}
-            <Route exact path="/" element={<PropsExample data={{ user }} />} />
+            {/* <Route exact path="/" element={<PropsExample data={{ user }} />} /> */}
           </Routes>
         </Router>
       </UserContext.Provider>
