@@ -24,11 +24,16 @@ const Welcome = () => {
   // "https://646caca27b42c06c3b2bc2d8.mockapi.io/getData"
   // const { fetchdata } = useFetch("https://646caca27b42c06c3b2bc2d8.mockapi.io/getData",true, "POST");
 
-  const apiUrl = "https://v2.convertapi.com/upload";
+  const apiUrl = "test";
+  const initialRun = false;
+  const methodType = 'post';
+  const contentType = "json";
+
   const { data, isLoading, error, axiosData } = useAxios(
-    "https://v2.convertapi.com/upload",
-    false,
-    "POST"
+    apiUrl,
+    initialRun,
+    methodType,
+    contentType
   );
 
   const handleSubmit = async (values) => {
@@ -42,7 +47,7 @@ const Welcome = () => {
     formData.append("email", email);
     formData.append("password", password);
     formData.append("photo", photo);
-    await axiosData(formData);
+    await axiosData("Cool");
     // formData.append("File", values.photo);
 
     // axiosData("https://v2.convertapi.com/upload", formData);

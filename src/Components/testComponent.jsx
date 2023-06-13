@@ -3,6 +3,7 @@ import { useAxios } from "../Hook/useAxios";
 import axios from "axios";
 
 const TestComponent = () => {
+  debugger;
   const [method, setMethod] = useState("get");
 
   // Fetch default data on component mount.
